@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 
 const RepositoriesList: React.FC = () => {
     const [term, setterm] = useState('');
 
-    const onSubmit = () => {
+    const onSubmit = (event:  React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
 
     };
     return (<div>
